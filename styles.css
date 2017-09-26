@@ -1,0 +1,27 @@
+ body {
+ 	background-image: url("http://cdn04.androidauthority.net/wp-content/uploads/2015/08/wallpaper_001.png");
+ 	color: white;
+ 	font-family: 'Monda', sans-serif;
+ }
+
+.links {
+	width: 30%;
+	border: 3px solid white;
+	background-color: black;
+	opacity: 0.8;
+	margin: 0 auto;
+	padding: 50px;
+	font-size: 18px;
+}
+
+a {
+	color: white;
+}
+
+ul {
+	list-style-type: none;
+}
+
+h1 {
+	text-align: center;
+}
