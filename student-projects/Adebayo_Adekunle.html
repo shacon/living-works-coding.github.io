@@ -1,6 +1,38 @@
 <HTML>
-<head><title>why is he on fire</title></head>
-<body style="background-color: mediumspringgreen;"> 
+<head>
+	<title>why is he on fire</title>
+	<style>
+		@keyframes background-animation {
+			from {background-color: red;}
+			to  {background-color: yellow;}
+		}
+		body {
+			background-color: mediumspringgreen;
+			animation-name: background-animation;
+			animation-duration: 10s;
+		}
+	</style>
+	<script>
+		var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("myslides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length};
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+	</script>
+</head>
+<body> 
 	<h1>"MANS NOT HOT, HE'S ON FIRE"</h1>
 <H1>HE'S ON FIRE</H1>
 <h2>WHY IS HE ON FIRE!"</h2>
@@ -45,8 +77,13 @@
 	</td>
 	<td>just playing</td>
 </tr>
-<img src="">
 </table>
+<img class="myslides" src="https://cdn3.volusion.com/goz35.avhz4/v/vspfiles/photos/TT-NI658789-426-2.jpg?1456231556" width=560 height=550 />
+<img class="myslides" src="http://images.footballfanatics.com/FFImage/thumb.aspx?i=/productimages/_2422000/altimages/ff_2422287alt2_full.jpg&w=600" width=560 height=550 />
+<img class="myslides" src="http://www.gleesonsport.ie/sites/default/files/040678%20Blue%20Danube%20Limogee%2003.jpg" width=560 height=550/>
+<img class="myslides" src="http://pumaimages.azureedge.net/images/751670/01/fnd/PNA/w/540/h/540/fmt/jpeg/" width=560 height=550 />
+<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
 </body>
 </HTML>
 
